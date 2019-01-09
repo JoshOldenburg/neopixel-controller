@@ -5105,13 +5105,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="7.62" y="22.86"/>
 <vertex x="7.62" y="26.67"/>
 </polygon>
-<polygon width="0.508" layer="16">
-<vertex x="7.62" y="26.67"/>
+<polygon width="1.016" layer="16">
 <vertex x="34.29" y="26.67"/>
 <vertex x="34.29" y="0"/>
-<vertex x="7.9375" y="0"/>
-<vertex x="7.9375" y="19.685"/>
-<vertex x="7.62" y="20.0025"/>
+<vertex x="8.255" y="0"/>
+<vertex x="8.255" y="26.67"/>
 </polygon>
 </signal>
 <signal name="RESET">
