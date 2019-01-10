@@ -8652,14 +8652,14 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="3.9k"/>
+<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="NP"/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="2-PIN_2MM-*" device="H"/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="2-PIN_2MM-*" device="H"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="OK1" library="optocoupler" library_urn="urn:adsk.eagle:library:320" deviceset="H11L*M" device="S" package3d_urn="urn:adsk.eagle:package:21970/1" technology="1"/>
 <part name="OK2" library="optocoupler" library_urn="urn:adsk.eagle:library:320" deviceset="H11L*M" device="S" package3d_urn="urn:adsk.eagle:package:21970/1" technology="1"/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1.5k"/>
+<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="NP"/>
 <part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="270"/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="270"/>
 <part name="U2" library="JoshCustom" deviceset="AZ1117IH" device=""/>
@@ -8670,6 +8670,8 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
+<part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/2V" package3d_urn="urn:adsk.eagle:package:23490/1" value="3.9k"/>
+<part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/2V" package3d_urn="urn:adsk.eagle:package:23490/1" value="1.5k"/>
 </parts>
 <sheets>
 <sheet>
@@ -8738,7 +8740,7 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 </instance>
 <instance part="J1" gate="G$1" x="63.5" y="71.12" smashed="yes">
 <attribute name="NAME" x="58.42" y="78.74" size="1.778" layer="95" font="vector" align="top-left"/>
-<attribute name="VALUE" x="58.42" y="63.5" size="1.778" layer="96" font="vector"/>
+<attribute name="VALUE" x="50.8" y="63.5" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="GND4" gate="1" x="109.22" y="60.96" smashed="yes">
 <attribute name="VALUE" x="109.22" y="60.706" size="1.778" layer="96" align="top-center"/>
@@ -8794,6 +8796,14 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 </instance>
 <instance part="SUPPLY7" gate="G$1" x="15.24" y="93.98" smashed="yes">
 <attribute name="VALUE" x="15.24" y="96.774" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="R8" gate="G$1" x="76.2" y="60.96" smashed="yes" rot="R180">
+<attribute name="NAME" x="72.39" y="62.4586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.39" y="57.658" size="1.778" layer="96"/>
+</instance>
+<instance part="R9" gate="G$1" x="76.2" y="106.68" smashed="yes" rot="R180">
+<attribute name="NAME" x="72.39" y="108.1786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.39" y="103.378" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -9033,6 +9043,9 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="99.06" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
+<junction x="71.12" y="99.06"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -9047,20 +9060,29 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <pinref part="OK2" gate="G$1" pin="A"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="106.68" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
+<junction x="81.28" y="99.06"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="68.58" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="60.96" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
+<junction x="81.28" y="68.58"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="OK1" gate="G$1" pin="C"/>
-<wire x1="81.28" y1="68.58" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="68.58" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="68.58" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+<junction x="71.12" y="68.58"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -9090,13 +9112,6 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="104,1,104.14,45.72,U2,+5V,VCC,,,"/>
-<approved hash="104,1,104.14,17.78,U3,+5V,VCC,,,"/>
-<approved hash="113,1,111.997,117.066,R5,,,,,"/>
-<approved hash="113,1,111.997,71.3461,JP1,,,,,"/>
-<approved hash="113,1,111.997,84.0461,JP2,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
