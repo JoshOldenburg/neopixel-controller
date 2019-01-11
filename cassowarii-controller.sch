@@ -383,36 +383,15 @@
 <text x="-3.937" y="-1.27" size="0.8128" layer="21" font="vector" rot="R90">+5V</text>
 <text x="5.08" y="-1.27" size="0.8128" layer="21" font="vector" rot="R90">GND</text>
 </package>
-<package name="SOT223" urn="urn:adsk.eagle:footprint:29179/1">
-<description>&lt;b&gt;SOT-223&lt;/b&gt;</description>
-<wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="-1.778" x2="-3.2766" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="1.778" x2="3.2766" y2="1.778" width="0.2032" layer="21"/>
-<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="-2.54" y="0.0508" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-1.3208" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-</package>
 <package name="SOIC8">
 <description>&lt;b&gt;Small Outline IC&lt;/b&gt;</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
 <smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
@@ -431,6 +410,7 @@
 <rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<circle x="-1.905" y="-0.889" radius="0.127" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -461,21 +441,6 @@
 <wire x1="0" y1="15.24" x2="0" y2="0" width="0.254" layer="94"/>
 <text x="0.254" y="15.748" size="1.27" layer="95">&gt;Name</text>
 <text x="0" y="-2.54" size="1.27" layer="96">&gt;Value</text>
-</symbol>
-<symbol name="78XX">
-<description>78xx-style voltage regulator</description>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<text x="2.54" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.032" y="-4.318" size="1.524" layer="95">GND</text>
-<text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
-<text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
-<pin name="IN" x="-7.62" y="0" visible="off" length="short" direction="in"/>
-<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
-<pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -553,23 +518,6 @@
 <connect gate="G$1" pin="+5V" pad="3"/>
 <connect gate="G$1" pin="DIN" pad="2"/>
 <connect gate="G$1" pin="GND" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AZ1117IH">
-<gates>
-<gate name="G$1" symbol="78XX" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT223">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2 4" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7911,13 +7859,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 <text x="0" y="-0.254" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
-<symbol name="VIN">
-<description>&lt;h3&gt;Input Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="VIN" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VCC" prefix="SUPPLY">
@@ -7939,20 +7880,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
 <gates>
 <gate name="1" symbol="DGND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VIN" prefix="SUPPLY">
-<description>&lt;h3&gt;Input Voltage Supply&lt;/h3&gt;
-&lt;p&gt;Generic voltage input supply symbol.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="VIN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -8652,24 +8579,18 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="NP"/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="2-PIN_2MM-*" device="H"/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="2-PIN_2MM-*" device="H"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="OK1" library="optocoupler" library_urn="urn:adsk.eagle:library:320" deviceset="H11L*M" device="S" package3d_urn="urn:adsk.eagle:package:21970/1" technology="1"/>
 <part name="OK2" library="optocoupler" library_urn="urn:adsk.eagle:library:320" deviceset="H11L*M" device="S" package3d_urn="urn:adsk.eagle:package:21970/1" technology="1"/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="NP"/>
 <part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="270"/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="270"/>
-<part name="U2" library="JoshCustom" deviceset="AZ1117IH" device=""/>
-<part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
-<part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
 <part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="AVR_SPI_PROG_3X2" device="PTH"/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/2V" package3d_urn="urn:adsk.eagle:package:23490/1" value="3.9k"/>
 <part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0207/2V" package3d_urn="urn:adsk.eagle:package:23490/1" value="1.5k"/>
 </parts>
@@ -8709,8 +8630,8 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <attribute name="NAME" x="11.2014" y="19.05" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="16.002" y="19.05" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="43.18" y="93.98" smashed="yes">
-<attribute name="VALUE" x="43.18" y="96.774" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY2" gate="G$1" x="22.86" y="93.98" smashed="yes">
+<attribute name="VALUE" x="22.86" y="96.774" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY3" gate="G$1" x="45.72" y="17.78" smashed="yes">
 <attribute name="VALUE" x="45.72" y="20.574" size="1.778" layer="96" align="bottom-center"/>
@@ -8721,18 +8642,14 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <instance part="GND1" gate="1" x="12.7" y="2.54" smashed="yes">
 <attribute name="VALUE" x="12.7" y="2.286" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND2" gate="1" x="27.94" y="71.12" smashed="yes">
-<attribute name="VALUE" x="27.94" y="70.866" size="1.778" layer="96" align="top-center"/>
+<instance part="GND2" gate="1" x="22.86" y="73.66" smashed="yes">
+<attribute name="VALUE" x="22.86" y="73.406" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="GND3" gate="1" x="99.06" y="2.54" smashed="yes">
 <attribute name="VALUE" x="99.06" y="2.286" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="12.7" y="30.48" smashed="yes">
 <attribute name="VALUE" x="12.7" y="33.274" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="R2" gate="G$1" x="76.2" y="68.58" smashed="yes">
-<attribute name="NAME" x="72.39" y="70.0786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="72.39" y="65.278" size="1.778" layer="96"/>
 </instance>
 <instance part="J2" gate="G$1" x="63.5" y="96.52" smashed="yes">
 <attribute name="NAME" x="58.42" y="104.14" size="1.778" layer="95" font="vector" align="top-left"/>
@@ -8756,10 +8673,6 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <attribute name="NAME" x="86.36" y="102.87" size="1.778" layer="95"/>
 <attribute name="VALUE" x="86.36" y="88.9" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="76.2" y="99.06" smashed="yes">
-<attribute name="NAME" x="72.39" y="100.5586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="72.39" y="95.758" size="1.778" layer="96"/>
-</instance>
 <instance part="R7" gate="G$1" x="116.84" y="104.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="115.3414" y="100.33" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="120.142" y="100.33" size="1.778" layer="96" rot="R90"/>
@@ -8768,21 +8681,9 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <attribute name="NAME" x="115.3414" y="74.93" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="120.142" y="74.93" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U2" gate="G$1" x="27.94" y="91.44" smashed="yes">
-<attribute name="NAME" x="22.86" y="99.06" size="1.778" layer="95"/>
-<attribute name="VALUE" x="22.86" y="96.52" size="1.778" layer="96"/>
-</instance>
-<instance part="C1" gate="G$1" x="17.78" y="86.36" smashed="yes">
-<attribute name="NAME" x="18.796" y="86.995" size="1.778" layer="95"/>
-<attribute name="VALUE" x="18.796" y="82.169" size="1.778" layer="96"/>
-</instance>
-<instance part="C2" gate="G$1" x="38.1" y="86.36" smashed="yes">
-<attribute name="NAME" x="39.116" y="86.995" size="1.778" layer="95"/>
-<attribute name="VALUE" x="38.608" y="82.169" size="1.778" layer="96"/>
-</instance>
-<instance part="C3" gate="G$1" x="48.26" y="86.36" smashed="yes">
-<attribute name="NAME" x="49.276" y="86.995" size="1.778" layer="95"/>
-<attribute name="VALUE" x="49.276" y="82.169" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="27.94" y="86.36" smashed="yes">
+<attribute name="NAME" x="28.956" y="86.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="28.956" y="82.169" size="1.778" layer="96"/>
 </instance>
 <instance part="J3" gate="G$1" x="22.86" y="50.8" smashed="yes">
 <attribute name="NAME" x="17.78" y="56.388" size="1.778" layer="95" font="vector"/>
@@ -8794,16 +8695,13 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <instance part="SUPPLY6" gate="G$1" x="35.56" y="55.88" smashed="yes">
 <attribute name="VALUE" x="35.56" y="58.674" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="15.24" y="93.98" smashed="yes">
-<attribute name="VALUE" x="15.24" y="96.774" size="1.778" layer="96" align="bottom-center"/>
+<instance part="R8" gate="G$1" x="76.2" y="68.58" smashed="yes">
+<attribute name="NAME" x="72.39" y="70.0786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.39" y="65.278" size="1.778" layer="96"/>
 </instance>
-<instance part="R8" gate="G$1" x="76.2" y="60.96" smashed="yes" rot="R180">
-<attribute name="NAME" x="72.39" y="62.4586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="72.39" y="57.658" size="1.778" layer="96"/>
-</instance>
-<instance part="R9" gate="G$1" x="76.2" y="106.68" smashed="yes" rot="R180">
-<attribute name="NAME" x="72.39" y="108.1786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="72.39" y="103.378" size="1.778" layer="96"/>
+<instance part="R9" gate="G$1" x="76.2" y="99.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="72.39" y="100.5586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.39" y="95.758" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8852,24 +8750,22 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <junction x="111.76" y="111.76"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="OUT"/>
-<wire x1="35.56" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="91.44" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
-<junction x="38.1" y="91.44"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="91.44" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="91.44" x2="48.26" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="91.44" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
-<junction x="43.18" y="91.44"/>
-<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
 <wire x1="33.02" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="53.34" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J4" gate="A" pin="2"/>
+<wire x1="5.08" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="86.36" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="91.44" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<wire x1="22.86" y1="93.98" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="91.44" x2="27.94" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="91.44" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
+<junction x="22.86" y="91.44"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8900,38 +8796,26 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <junction x="109.22" y="68.58"/>
 </segment>
 <segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="27.94" y1="73.66" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="76.2" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="78.74" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="81.28" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
-<junction x="27.94" y="78.74"/>
-<junction x="27.94" y="76.2"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="81.28" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="78.74" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="78.74" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
-<junction x="38.1" y="78.74"/>
-<pinref part="J4" gate="A" pin="1"/>
-<wire x1="5.08" y1="88.9" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="88.9" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="83.82" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="76.2" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
-<junction x="17.78" y="76.2"/>
-<pinref part="J4" gate="A" pin="3"/>
-<wire x1="5.08" y1="83.82" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
-<junction x="12.7" y="83.82"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="6"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="33.02" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="48.26" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J4" gate="A" pin="1"/>
+<wire x1="12.7" y1="78.74" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="88.9" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="88.9" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="83.82" x2="12.7" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="J4" gate="A" pin="3"/>
+<wire x1="5.08" y1="83.82" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
+<junction x="12.7" y="83.82"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="22.86" y1="78.74" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="81.28" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="78.74" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
+<junction x="22.86" y="78.74"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -9042,10 +8926,7 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="99.06" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
-<junction x="71.12" y="99.06"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -9058,31 +8939,8 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <net name="N$10" class="0">
 <segment>
 <pinref part="OK2" gate="G$1" pin="A"/>
-<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="106.68" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
-<junction x="81.28" y="99.06"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="68.58" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="60.96" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
-<junction x="81.28" y="68.58"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="OK1" gate="G$1" pin="C"/>
-<wire x1="71.12" y1="68.58" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="68.58" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
-<junction x="71.12" y="68.58"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -9092,21 +8950,18 @@ Drive battery is 5S, voltage range 12.5-21V</text>
 <wire x1="83.82" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VIN" class="0">
+<net name="N$4" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="IN"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="91.44" x2="20.32" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="88.9" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="J4" gate="A" pin="2"/>
-<wire x1="5.08" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="86.36" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="91.44" x2="15.24" y2="91.44" width="0.1524" layer="91"/>
-<junction x="17.78" y="91.44"/>
-<pinref part="SUPPLY7" gate="G$1" pin="VIN"/>
-<wire x1="15.24" y1="91.44" x2="17.78" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="93.98" x2="15.24" y2="91.44" width="0.1524" layer="91"/>
-<junction x="15.24" y="91.44"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="OK1" gate="G$1" pin="C"/>
+<wire x1="81.28" y1="68.58" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
