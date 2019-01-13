@@ -30,5 +30,9 @@ Quantity 3: $7 for boards, $17 for components = $24/$8 each
 
 Design Review Issues
 ====================
-- Resistors will drop too much power. Use power resistors or multiple in series
-- Can't use a BEC to power it as then you can have weapon motor power without indication when the drive motors are off
+- Resistors will drop too much power. Use power resistors or multiple in series. FIXED - using through hole power resistors
+- Can't use a BEC to power it as then you can have weapon motor power without indication when the drive motors are off. FIXED - will power off of 2xAAA again
+
+ATTiny85
+========
+- .9V/1.8V digital on/off voltage at 3V supply
